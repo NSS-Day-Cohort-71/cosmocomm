@@ -1,0 +1,24 @@
+Table Planet {
+    id int [primary key]
+    name string
+}
+
+Table Message {
+    id int [primary key]
+    content string
+    recipientId int [ref: > Planet.id]
+    senderId int [ref: > Planet.id]
+    timestamp date
+}
+
+Table Topic {
+    id int [primary key]
+    label string
+    description string
+}
+
+Table MessageTopics {
+    id int [primary key]
+    messageId int [ref: > Message.id]
+    topicId int [ref: > Topic.id]
+}

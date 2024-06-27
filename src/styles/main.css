@@ -1,0 +1,80 @@
+body {
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    font-family: 'Arial', sans-serif;
+    color: #e0e0e0;
+    padding: 20px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 600px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+label {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+select, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    font-size: 1em;
+}
+
+button {
+    background: #5b2b82;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #7a3db8;
+}
+
+.message {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.message div {
+    margin-bottom: 5px;
+}
+
+.message-date {
+    font-weight: bold;
+    color: #e3b23c;
+}
+
+.sender, .recipient {
+    color: #7fb3d5;
+}
+
+.topic {
+    color: #f1948a;
+}
+
+.message-body {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
